@@ -1,0 +1,9 @@
+version: "2.3"
+
+services:
+  notionbot:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: notionbot
+    restart: on-failure
