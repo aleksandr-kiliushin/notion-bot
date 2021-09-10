@@ -1,4 +1,4 @@
-module notionbot
+module notion-bot
 
 go 1.17
 
