@@ -124,29 +124,5 @@ func addTodo(botUrl string, update Update) error {
 
 	defer resp.Body.Close()
 
-	// fmt.Println("response Status:", resp.Status)
-	// fmt.Println("response Headers:", resp.Header)
-	// body, _ := ioutil.ReadAll(resp.Body)
-	// fmt.Println("response Body:", string(body))
-
 	return nil
-
-	// var botMessage BotMessage
-
-	// botMessage.ChatId = update.Message.Chat.ChatId
-	// botMessage.Text = update.Message.Text
-
-	// buf, err := json.Marshal(botMessage)
-
-	// if err != nil {
-	// 	return err
-	// }
-
-	// _, err = http.Post(botUrl+"/sendMessage", "application/json", bytes.NewBuffer(buf))
-
-	// if err != nil {
-	// 	return err
-	// }
-
-	// return nil
 }
